@@ -11,6 +11,11 @@ jobs:
           pwd 
           ls -la
 
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPASE
+          echo "${{ github.token }}"
+
       - name: Checkout Action
         uses: actions/checkout@v1
        
